@@ -11,7 +11,18 @@ public class H10 {
         int a =input.nextInt();
         int sum = 0;
 
-       if (a%10>0){
+        while(a%10>0){
+            sum += a%10;
+            a = a/10;
+        }
+        sum += a;
+        if (sum%9==0){
+            System.out.println("该数能被9整除");
+        }else {
+            System.out.println("该数不能被9整除");
+        }
+
+       /*if (a%10>0){
            sum += a%10;
            a = a/10;
            sum += a;
@@ -24,19 +35,10 @@ public class H10 {
        }else{
            System.out.println("该数不能被9整除");
        }
+*/
 
 
 
-       /*while(a%10>0){
-            sum += a%10;
-            a = a/10;
-        }
-            sum += a;
-        if (sum%9==0){
-            System.out.println("该数能被9整除");
-        }else {
-            System.out.println("该数不能被9整除");
-        }*/
     }
 
 }
