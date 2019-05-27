@@ -20,6 +20,7 @@ public class H8 {
         Scanner scan = new Scanner(System.in);
         String s = scan.next();
         char w = s.charAt(0);
+       /* char[] w = s.toCharArray();*/
 
 
         if (w>='a'&&w<='z'){
@@ -27,7 +28,9 @@ public class H8 {
             System.out.println(w);
         }else if (w>='A'&&w<='Z'){
             System.out.println(w);
-
         }
+
+
+
     }
 }
